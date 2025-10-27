@@ -1,0 +1,84 @@
+/* Fullscreen background */
+.landing-container {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+  }
+  
+  /* Optional dark overlay */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Centered content */
+  .landing-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  /* Main heading */
+  .landing-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Tagline */
+  .landing-tagline {
+    font-size: 18px;
+    color: #d1d1d1;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons container */
+  .landing-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Button styles */
+  .landing-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  .landing-btn.primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .landing-btn.primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .landing-btn.secondary {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  .landing-btn.secondary:hover {
+    background-color: white;
+    color: black;
+  }
+  
